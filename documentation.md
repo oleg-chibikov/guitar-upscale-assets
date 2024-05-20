@@ -7,7 +7,7 @@ A virtual guitar which allows to play notes and chords in a selected scale.
 ![main](/screenshots/webp/main.webp "Main")
 
 1. `Subscription (mobile) / Sign in (web)` button - open the subscription view that allows unlocking premium features
-1. `Main menu` - various buttons to control the app behaviour
+1. `Main menu` - various buttons to control the app behavior
 1. `Fretboard` - resembles a guitar (skin can be changed - requires `Composer` plan).
    > You can play notes here
    > It only shows notes that match the selected scale (hint: for playing any note choose the `Special - Chromatic (all notes)` scale)
@@ -34,7 +34,7 @@ A virtual guitar which allows to play notes and chords in a selected scale.
 1.  `Play` button - allows to understand how the selected scale sounds like
     > Depends on the `Playback type` setting
     > Could play the scale or the examples (if available)
-1.  `Scale selector` - allows chosing the scale group and the scale. For example `Far eastern - Chinese Yo`
+1.  `Scale selector` - allows choosing the scale group and the scale. For example `Far eastern - Chinese Yo`
     > Changing scale stops current playback and updates the fretboard and chords
 1.  `Metronome` button - toggles metronome (volume and tempo can be changed in settings)
 1.  `Record` button (requires `Composer` plan) - toggles MIDI recording
@@ -116,8 +116,16 @@ A virtual guitar which allows to play notes and chords in a selected scale.
 
 ## Fretboard highlight colors
 
-TODO
+![fretboard_highlight](/screenshots/webp/fretboard_highlight.webp "Fretboard Highlight")
 
-## Authorisation
+> Each note can be colored differently
+> The notes are animated when playing. Chords and notes have different animation colors and the same is applicable to the different tracks in the examples
+
+1. A regular note that can be played within the selected scale
+1. A base note matching the Base note/Capo setting
+1. A note from the last played chord
+1. A note selected (manually) for chord matching (up to 1 note per string)
+
+## Authorization
 
 TODO
