@@ -114,6 +114,32 @@ A virtual guitar which allows to play notes and chords in a selected scale.
 
 ![strumming_settings](/screenshots/webp/strumming_settings.webp "Strumming settings")
 
+> Strumming is playing the rhythm pattern using one chord at a time
+> It is highly affected by the `Chord strumming delay` setting. It's recommended to reduce its value for strumming, however high values sometimes produce interesting results
+> Strumming starts straight away if
+>
+> - Metronome is not ticking
+> - Recording is not active
+> - Example is not playing
+>   Otherwise it plays the first chord straight away and then waits for the next bar (when metronome plays a different sound) to start strumming
+>   Strumming is not activated if the chord is clicked (pressed and unpressed almost immediately)
+>   It's totally fine to press another chord while strumming (see settings below)
+
+1. `Wait for pattern to finish`
+   1. Selected - once chord strumming has been started - it will finish the pattern even if the chord is unpressed
+      > Useful for seamless playing
+   1. Deselected - strumming terminates once the chord is unpressed
+1. `Chord switching amidst pattern`
+   1. Selected - when another chord is pressed while strumming it will switch to it straight away keeping the current position within the pattern
+      > Gives more flexibility and ability to vary melodies
+   1. Deselected - when another chord is pressed while strumming it will wait for the pattern to finish before switching to it
+      > Gives more reliable playback but not that flexible
+1. `Strumming pattern` - describes the rhythm of strumming
+   1. `↑` - plays the chord starting from the thickest (lowest) string. It takes one interval
+   1. `↓` - plays the chord starting from the thinnest (highest) string. It takes one interval
+   1. `_` - skips one interval
+1. `Strumming interval` - how frequent the chords should be while strumming
+
 ## Fretboard highlight colors
 
 ![fretboard_highlight](/screenshots/webp/fretboard_highlight.webp "Fretboard Highlight")
