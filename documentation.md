@@ -115,6 +115,10 @@ A virtual guitar which allows to play notes and chords in a selected scale.
 ![strumming_settings](/screenshots/webp/strumming_settings.webp "Strumming settings")
 
 > Strumming is playing the rhythm pattern using one chord at a time
+> It can simplify playing a song as you don't need to click on chords every time, but instead you can just press it once
+> Strumming pattern repeats while the chord is pressed
+> You can play single notes while strumming
+> Strumming is deactivated when unpressed. However there is an exception - if it was unpressed over the fretboard - it will keep strumming. This allows playing the notes simultaneously with strumming
 > It is highly affected by the `Chord strumming delay` setting. It's recommended to reduce its value for strumming, however high values sometimes produce interesting results
 > Strumming starts straight away if
 >
