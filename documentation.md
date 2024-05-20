@@ -4,7 +4,7 @@ A virtual guitar which allows to play notes and chords in a selected scale.
 
 ## Main Interface
 
-![main](/screenshots/webp/main.webp "main")
+![main](/screenshots/webp/main.webp "Main")
 
 1. `Subscription (mobile) / Sign in (web)` button - open the subscription view that allows unlocking premium features
 1. `Main menu` - various buttons to control the app behaviour
@@ -26,24 +26,29 @@ A virtual guitar which allows to play notes and chords in a selected scale.
 
 ## Main menu
 
+![main_menu](/screenshots/webp/main_menu.webp "Main menu")
+
 1.  `Settings` button - opens the settings view
 1.  `Fullscreen` button - toggles fullscreen mode (on mobile it might show the device buttons)
 1.  `Chord detector` (requires `Explorer` plan) - allows detecting chords by pressing notes on several strings one by one or simultaneously
 1.  `Play` button - allows to understand how the selected scale sounds like
     > Depends on the `Playback type` setting
     > Could play the scale or the examples (if available)
+1.  `Scale selector` - allows chosing the scale group and the scale. For example `Far eastern - Chinese Yo`
+    > Changing scale stops current playback and updates the fretboard and chords
 1.  `Metronome` button - toggles metronome (volume and tempo can be changed in settings)
 1.  `Record` button (requires `Composer` plan) - toggles MIDI recording
     > While recording all the notes will be recorded in a live mode
     > Once pressed the button transforms into two other buttons - save recording or cancel recording
-    > When saved the MIDI file with the recorded melody is saved to the standard download location (usually it's Downloads folder)
+    > When saved the MIDI file with the recorded melody is saved to the standard download location (usually it's `Downloads` folder)
     > The saved filename contains selected scale, tempo and the timestamp.
     > Actual recording doesn't start until the first pressed note, so there is no need to play immediately - the recording will be trimmed anyway
 1.  `Strumming settings` button - opens the strumming settings view (strumming is activated by pressing the chord without releasing it)
-1.  `Scale selector` - allows chosing the scale group and the scale. For example `Far eastern - Chinese Yo`
-    Changing scale stops current playback and updates the fretboard and chords
+1.  `About` button - shows this documentation
 
 ## Settings view
+
+![settings](/screenshots/webp/settings.webp "Settings")
 
 1. `Show advanced chords` (requires `Explorer` plan) - hides or shows advanced chords in the Chords view
    > There are a lot of advanced chords so sometimes it's convenient to hide them
@@ -104,6 +109,13 @@ A virtual guitar which allows to play notes and chords in a selected scale.
    > Is different from system volume
 1. `Metronome volume` - how loud is metronome
 1. `Reverb strength` (only on desktop, glitchy on mobile) - adds reverb effect to the sound
-   ##Strumming panel TODO
-   ##Fretboard highlight colors TODO
-   ##Authorisation TODO
+
+   ##Strumming settings
+
+![strumming_settings](/screenshots/webp/strumming_settings.webp "Strumming settings")
+
+##Fretboard highlight colors
+TODO
+
+##Authorisation
+TODO
