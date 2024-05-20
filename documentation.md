@@ -149,7 +149,8 @@ A virtual guitar which allows to play notes and chords in a selected scale.
 ![fretboard_highlight](/screenshots/webp/fretboard_highlight.webp "Fretboard Highlight")
 
 > - Each note can be colored differently
-> - The notes are animated when playing. Chords and notes have different animation colors and the same is applicable to the different tracks in the examples
+> - The notes are animated when playing
+> - Chords and notes have different animation colors and the same is applicable to the different tracks in the examples
 
 1. A regular note that can be played within the selected scale
 1. A base note matching the `Base note/Capo` setting
