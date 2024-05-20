@@ -152,10 +152,51 @@ A virtual guitar which allows to play notes and chords in a selected scale.
 > - The notes are animated when playing. Chords and notes have different animation colors and the same is applicable to the different tracks in the examples
 
 1. A regular note that can be played within the selected scale
-1. A base note matching the Base note/Capo setting
+1. A base note matching the `Base note/Capo` setting
 1. A note from the last played chord
 1. A note selected (manually) for chord matching (up to 1 note per string)
 
 ## Authorization
 
-TODO
+The default version of the app allows playing and exploring basic chords without any limitations, however using advanced features like chord detection or midi recording require a paid subscription
+There are 2 tiers of subscription: `Explorer` (`AUD$ 1/month`) and `Composer` (`AUD$ 3/month`).
+
+Clicking on `subscribe` button while not subscribed shows the following UI (should be online)
+
+![auth_not_authorized](/screenshots/webp/auth_not_authorized.webp "Not authorized")
+
+There are two methods of getting premium features:
+
+### Patreon (available on the website)
+
+![auth_patreon](/screenshots/webp/auth_patreon.webp "Auth with Patreon on Android")
+
+1.  Subscription link available only on the website (it cannot be displayed on Android due to the Google Play billing policies)
+1.  All the transactions happen within the Patreon system. Guitar upscale doesn't deal with transactions itself
+1.  If subscribed on the website, the purchased subscription can be later used on mobile
+
+### Google Play billing (available on Android)
+
+![auth_google_play](/screenshots/webp/auth_google_play.webp "Auth with Google Play on Android")
+
+1. Purchase happens using the standard Google Play billing UI.
+1. All the transactions happen within the Google Play billing system. Guitar upscale doesn't deal with transactions itself
+1. The subscription might be cancelled
+   1. If it is cancelled within the grace period (7 days) - it will be refunded straight away
+   1. Otherwise it will remain active till the expiry date
+   1. If there is a cancelled subscription with a higher tier than your active subscription - you will keep using its permissions until expiry
+1. Upgrade/downgrade attempts to cancel the current subscription and purchase a new one
+1. Downgrading a subscription while there is a cancelled one will attempt to defer the new subscription until the cancelled one expires
+
+> - Subscribing is not available while offline
+> - The app doesn't store any user info. It doesn't have a database at all. The user info and subscription status are stored on Google Play or Patreon
+> - The app reloads automatically if there is a mismatch between granted permissions and the purchased subscription and applies the correct permissions
+> - Opening app while offline won't give permissions if subscribed. Checking the subscription status requires internet connection - it happens on the app launch and then periodically
+
+When subscribed you will see a message indicating the result
+
+![auth_message](/screenshots/webp/auth_message.webp "Auth message")
+
+And then the app reloads and the updated subscription options are shown
+
+![auth_authorized](/screenshots/webp/auth_authorized.webp "Authorized")
