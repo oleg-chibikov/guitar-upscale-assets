@@ -110,12 +110,14 @@ A virtual guitar which allows to play notes and chords in a selected scale.
 1. `Metronome volume` - how loud is metronome
 1. `Reverb strength` (only on desktop, glitchy on mobile) - adds reverb effect to the sound
 
-   ##Strumming settings
+## Strumming settings
 
 ![strumming_settings](/screenshots/webp/strumming_settings.webp "Strumming settings")
 
-##Fretboard highlight colors
+## Fretboard highlight colors
+
 TODO
 
-##Authorisation
+## Authorisation
+
 TODO
